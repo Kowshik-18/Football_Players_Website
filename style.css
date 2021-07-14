@@ -4,7 +4,8 @@
 /* common style or utilities */
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: aqua;
+    background-color: #FFFFFF;
+    ;
     margin: 0px;
 }
 main{
@@ -101,6 +102,7 @@ h1.title{
     justify-items: center;
     padding: 0px;
     row-gap: 27px;
+    column-gap: 15px;
 }
 
 .block{
@@ -159,8 +161,6 @@ h2.title02{
     width: 40%;
     height: 225px;
     position: relative;
-    /* margin: 15px;
-    overflow: hidden; */
 }
 
 .photo img {
@@ -174,7 +174,7 @@ h2.title02{
     padding-left: 10px;
     width: 98.4%;
     height: 38.7%;
-    bottom: -160px;
+    bottom: -163.5px;
 }
 
 .arrow-block{
@@ -204,6 +204,74 @@ h2.title02{
     width: 130px;
     height: 35px;
     transition: width 1s ease-in-out;
+}
+
+
+/*  -------------
+   All matches 
+   ----------------   */
+
+.all-matches{
+    padding-bottom: 8%;
+}
+
+.matches{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 0;
+}
+
+.show-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid rgb(21, 21, 27);
+    border-radius: 5%;
+    box-shadow: 10px 10px 30px rgba(83, 80, 80, 0.445), inset 0 0 0 2px rgba(255, 255, 255, 0.39);
+    width: 400px;
+    height: 500px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px; */
+}
+
+.logo-set{
+    width: 160px;
+    height: 150px;
+}
+
+.score{
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon-set{
+    width: 35px;
+    height: 35px;
+}
+
+.match-button{
+    margin-top: 10%;
+    padding-top: 4%;
+    width: 270px;
+    height: 40px;
+    border-radius: 2em;
+    background-color: rgb(211, 218, 218);
+    border: 1px solid rgb(5, 128, 185);
+}
+
+.match-button a{
+    color: black;
+    text-decoration: none;
 }
 
 /*  -------------
@@ -290,15 +358,19 @@ h2.title02{
     .photo img{
         width: 240%;
     }
+     
+    .photo-block{
+        position: relative;
+        margin-left: 4%;
+    }
 
     .photo-details{
-        position: absolute;
-        bottom: -5px;
-        width: 232.5%;
+        bottom: 0px;
+        width: 233.5%;
     }
     
     .photo-news:hover .photo-details{
-        height: 102.5%;
+        height: 101.5%;
         transition: height 1s ease-in-out;
     }
 
@@ -306,4 +378,19 @@ h2.title02{
         width: 271px;
         height: 63px;
     }
+
+    .all-matches{
+        margin: 0;
+    }
+
+   .matches{
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+   }
+
+   .show-up{
+       max-width: 310px;
+       padding: 10px;
+   }
 }
